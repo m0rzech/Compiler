@@ -1,0 +1,18 @@
+(* NWD(a,b) *)
+CONST
+VAR
+a b
+START
+READ a;
+READ b;
+WHILE a!=b DO
+IF a<b THEN (* a <-> b *)
+a:=a+b;
+b:=a-b;
+a:=a-b;
+ELSE
+END
+a:=a-b;
+END
+WRITE a;
+END
